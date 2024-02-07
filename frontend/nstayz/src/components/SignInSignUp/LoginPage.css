@@ -1,0 +1,102 @@
+/* Add this CSS to your LoginPage.css file or your global styles */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto 0; /* Adjust the top margin value as needed */
+  padding: 20px;
+  border: 2px solid #3498db; /* Green border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: #fff; /* White background */
+  text-align: center; /* Center-align text within the container */
+}
+
+.login-container h2 {
+  margin-bottom: 20px; /* Add some space below the heading */
+  color: #3498db;
+}
+
+h2 {
+  color: #3498db; /* Green header */
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px; /* Increase margin for better spacing */
+  color: #555; /* Dark gray label text */
+}
+
+label input {
+  margin-right: 8px; /* Add some space between the checkbox and text */
+}
+
+label span {
+  font-weight: bold;
+  color: #3498db; /* Green color for VIP appearance */
+  text-transform: uppercase; /* Convert text to uppercase for a more prominent look */
+  border: 2px solid #3498db; /* Add border for emphasis */
+  padding: 4px; /* Add padding for better appearance */
+  border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+input {
+  width: 100%;
+  padding: 8px 1px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+}
+
+.login-container .terms-label {
+  margin-left: 50px;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center; /* Align label and input vertically */
+}
+
+.login-container .terms-label input {
+  margin-top: 18px;
+  left: 0px;
+  margin-left: 1px;
+  height: 14px;
+  position: absolute;
+}
+
+/* Styling for the "Forgot Password?" and "Create Account" buttons */
+div button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 400px; /* Adjust the width as needed */
+}
+
+div button:hover {
+  background-color: #286090; /* Darker blue on hover */
+}
+
+/* Message styling */
+.message-container {
+  margin-top: 20px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.message.success {
+  background-color: #4caf50; /* Green background for success */
+  color: #fff; /* White text */
+}
+
+.message.error {
+  background-color: #d9534f; /* Red background for error */
+  color: #fff; /* White text */
+}

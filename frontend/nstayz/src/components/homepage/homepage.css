@@ -1,0 +1,223 @@
+.homepage {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 150vh; /* Adjust the height as needed */
+  color: white;
+}
+
+.fixed-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #101820;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  color: #ffffff;
+}
+
+.learn-bar {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  background-color: rgba(226, 218, 218, 0.8);
+  margin-top: 10px;
+  border: 1px solid rgb(23, 115, 8);
+}
+
+.learn-bar h4 {
+  font-size: 1em;
+  margin: 0;
+  color: rgb(16, 16, 16);
+}
+
+/* Your existing styles for .title-bar */
+.title-bar {
+  display: flex;
+  padding: 95px;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  border: 2px solid rgb(23, 115, 8);
+  position: relative; /* Add position relative to the .title-bar */
+}
+
+/* New styles for .img-mv */
+.img-mv {
+  position: absolute; /* Position absolute to move the img within the .title-bar */
+  top: 0;
+  left: 0;
+}
+
+/* Styles for the logo img inside .img-mv */
+.img-mv img {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px; /* Adjust the width of the logo */
+  height: auto;
+}
+
+.search-bar {
+  width: 800px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 350px;
+  border-radius: 40px 40px 40px 40px;
+  border: 2px solid black;
+  position: absolute;
+  background-color: #e4decd;
+  display: flex;
+  align-items: center;
+}
+
+/* ... (your existing styles) ... */
+
+.search-bar.focused {
+  background-color: #e4decd;
+}
+
+.where-opt input:focus,
+.date-opt-in input:focus,
+.date-opt-out input:focus,
+.who-opt input:focus {
+  background-color: #ffffff;
+}
+
+/* ... (your existing styles) ... */
+
+.where-opt {
+  display: flex; /* Add this line to make it a flex container */
+  width: 195px;
+  height: 70px;
+  border-radius: 40px 40px 40px 40px;
+  /* background-color: #98AFC7; */
+  overflow: hidden;
+}
+
+.where-opt label {
+  position: absolute;
+  margin-left: 65px;
+  margin-top: 9px;
+  color: #000;
+  font-weight: bold;
+}
+
+.where-opt input {
+  width: 195px;
+  height: 70px;
+  border: none;
+  padding-left: 35px;
+  outline: none;
+  background-color: #e4decd;
+}
+
+.date-bar-in {
+  display: flex;
+  width: 150px;
+  height: 70px;
+  border-radius: 40px 40px 40px 40px;
+  margin-left: 2px;
+  /* background-color: #f2f3f4; */
+  overflow: hidden;
+}
+
+.date-opt-in label {
+  z-index: 1;
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 9px;
+  color: #000;
+  font-weight: bold;
+}
+.date-opt-in input {
+  width: 195px;
+  height: 70px;
+  border: none;
+  padding-left: 46px;
+  outline: none;
+  background-color: #e4decd;
+}
+
+.date-bar-out {
+  /* position: absolute; */
+  display: flex; /* Add this line to make it a flex container */
+  width: 150px;
+  height: 70px;
+  border-radius: 40px 40px 40px 40px;
+  margin-left: 2px;
+  /* background-color: #f2f3f4; */
+  overflow: hidden;
+}
+
+.date-opt-out label {
+  z-index: 1;
+  position: absolute;
+  margin-left: 36px;
+  margin-top: 9px;
+  color: #000;
+  font-weight: bold;
+}
+
+.date-opt-out input {
+  width: 195px; /* Take up the entire width of the .where-opt container */
+  height: 70px;
+  border: none;
+  padding-left: 46px;
+  outline: none;
+  background-color: #e4decd;
+}
+
+.who-opt {
+  display: flex; /* Add this line to make it a flex container */
+  width: 300px;
+  height: 70px;
+  margin-left: 2px;
+  border-radius: 40px 40px 40px 40px;
+  /* background-color: #f2f3f4; */
+  overflow: hidden;
+}
+
+.who-opt label {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 9px;
+  color: #000;
+  font-weight: bold;
+}
+
+.who-opt input {
+  width: 500px;
+  height: 70px;
+  border: none;
+  padding-left: 35px;
+  outline: none;
+  background-color: #e4decd;
+}
+
+.serach-bt button {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+  right: 20px;
+  border-radius: 40px 40px 40px 40px;
+  background-color: #f51524;
+}
+.serach-bt button:hover {
+  background-color: #d50e1b;
+}
+
+
+/* Adjust the size of date cells in the react-datepicker calendar */
+.react-datepicker-popper .react-datepicker__day {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+
